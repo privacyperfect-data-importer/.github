@@ -1,70 +1,29 @@
 # PrivacyPerfect Project Data Importer
 
-Welcome to the GitHub repository for the **PrivacyPerfect Project Data Importer**, a data conversion and importer platform. This project integrates a React frontend and a NestJS backend, providing an efficient solution for transforming and importing data into your tenant.
+GitHub repository for the **PrivacyPerfect Project Data Importer** – a platform with React frontend and NestJS backend for efficient data conversion and importing into your tenant.
 
-## Project Overview
+## Overview
 
-The primary goal of this project is to simplify the conversion of data from one format to another so that it can be imported into your tenant. This involves multiple steps to ensure accurate and consistent data transformation.
+Simplify data conversion with:
 
-### Project Components
-
-1. **Frontend:**
-
-    - The React frontend provides a user-friendly interface for interacting with the system.
-    - Users can upload data files, map columns, manage separators, and initiate data conversion.
-
-2. **Backend:**
-
-    - The NestJS backend handles data processing, mapping, conversion and importing.
-    - It ensures the accuracy and consistency of data transformations.
+-   **Frontend:** User-friendly interface for file upload, column mapping, and data conversion initiation.
+-   **Backend:** Handles processing, mapping, conversion, and ensures accurate and consistent data transformations.
 
 ## Getting Started
 
-To clone and run this repository, follow these steps:
+### For First-Time Users
 
-1. **Clone the Repository:**
+If this is your first time using PrivacyPerfect Data Importer:
 
-    ```bash
-    # Clone this repository
-    git clone https://github.com/Dalikey/PrivacyPerfect-Stage-Project.git
-    ```
+1. Create a new folder on your computer.
+2. Open the folder you created.
+3. To open a command prompt or terminal window, press `Shift + Right-click` inside the folder.
+4. Choose "Open command window here" or "Open PowerShell window here."
 
-2. **Start the Backend and Frontend:**
+Now, you're ready to follow the steps in the readmes:
 
-    ```bash
-    # Navigate to the backend directory, install dependencies, and start the server
-    cd privacyperfect-backend
-    npm install
-    npm start # or npm run start:dev for watch mode
-    ```
-
-    ```bash
-    # Navigate to the frontend directory, install dependencies, and start the development server
-    cd ../privacyperfect-frontend
-    npm install
-    npm start
-    ```
-
-3. **Run Unit Tests:**
-
-    To ensure the stability of the backend, run the unit tests using the following command:
-
-    ```bash
-    npm run test
-    ```
-
-4. **Access the Application:**
-
-    - The frontend should be accessible at `http://localhost:3000`.
-    - The backend will run on the specified port 3001.
-
-## Production Packaging
-
-To package the application for the local platform:
-
-```bash
-npm run package
-```
+-   [Backend README](https://github.com/privacyperfect-data-importer/back-end/blob/main/README.md)
+-   [Frontend README](https://github.com/privacyperfect-data-importer/front-end/blob/main/README.md)
 
 ## Usage
 
