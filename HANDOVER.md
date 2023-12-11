@@ -13,33 +13,49 @@ This document provides a step-by-step guide for setting up the PrivacyPerfect Da
 
 ## Backend (NestJS with Docker):
 
-1. **Extract:**
+1. **Extract Docker Image:**
 
-    - Extract the provided project file to access the backend components.
+    - In the folder where the `privacyperfect-data-importer-backend_2.zip` file is located, check if you have WinRAR or 7-Zip installed.
 
-2. **Navigate to the 'backend' Folder:**
+    - If you have WinRAR installed, right-click the file and choose "Extract Here."
 
-    - Find and navigate to the 'backend' folder containing the 'src' directory. For example: `<your_download_path>\back-end.`
+    - If you have 7-Zip installed, right-click the file, hover over the 7-Zip option, and choose "Extract Here."
 
-3. **Install Docker:**
+    - If you don't have WinRAR or 7-Zip, download and install either of them from the following links:
+
+        - [WinRAR](https://www.win-rar.com/download.html?&L=0)
+        - [7-Zip](https://www.7-zip.org/download.html)
+
+2. **Install Docker:**
 
     - Ensure that Docker Desktop is installed on your machine before proceeding. If not, download and install it from [Docker's official website](https://www.docker.com/products/docker-desktop/).
+    - After installing Docker Desktop, please note that a system restart may be required for the changes to take effect.
 
-4. **Open the Docker Desktop:**
+3. **Open the Docker Desktop:**
 
-    - Launch Docker Desktop so you can run the commands in step 5.
+    - Launch Docker Desktop to ensure that Docker is running on your machine.
 
-5. **Build and Run Docker Container:**
+4. **Load Docker Image and Run Container:**
 
-    - Open a command prompt or terminal window by pressing Shift + Right-click inside the backend folder. Choose "Open command window here" or "Open PowerShell window here," and run the following commands:
+    - In the folder where the `privacyperfect-data-importer-backend.tar` file is now located, press `Shift + Right-click` on an empty space in the folder.
+
+    - Choose "Open command window here" or "Open PowerShell window here" from the context menu.
+
+    - Run the following commands:
 
         ```bash
-        # Build the Docker image
-        docker build -t privacyperfect-data-importer-backend:0.1.0 .
+        # Load the Docker image from the tar file
+        docker load -i privacyperfect-data-importer-backend.tar
 
         # Run the Docker container
         docker run -p 3001:3001 -d privacyperfect-data-importer-backend:0.1.0
         ```
+
+    - The server should be running at http://localhost:3001.
+
+    - To view a nicely formatted version of the JSON responses, add the [JSON Formatter Chrome extension](https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?pli=1) to your Chrome browser.
+
+    - To stop the server, go to Docker Desktop > Images > open the image under status "In use" > Stop the server by pressing the square under actions.
 
 ## Contact
 
