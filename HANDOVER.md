@@ -9,7 +9,7 @@ This document provides a step-by-step guide for setting up the PrivacyPerfect Da
     - Extract the contents of the provided project zip file.
 
 2. **Run:**
-    - Locate and run the executable file named "PrivacyPerfectDataImporter Setup 0.1.0.exe".
+    - Locate and run the executable file named "PrivacyPerfectDataImporter Setup 0.1.2.exe".
 
 ## Backend (NestJS with Docker):
 
@@ -48,7 +48,7 @@ This document provides a step-by-step guide for setting up the PrivacyPerfect Da
         docker load -i privacyperfect-data-importer-backend.tar
 
         # Run the Docker container
-        docker run -p 3001:3001 -d privacyperfect-data-importer-backend:0.1.0
+        docker run -p 3001:3001 -d privacyperfect-data-importer-backend:0.1.2
         ```
 
     - The server should be running at http://localhost:3001.
