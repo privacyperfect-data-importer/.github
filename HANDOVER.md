@@ -9,7 +9,7 @@ This document provides a step-by-step guide for setting up the PrivacyPerfect Da
     - Extract the contents of the provided project zip file.
 
 2. **Run:**
-    - Locate and run the executable file named "PrivacyPerfectDataImporter Setup <version>.exe".
+    - Locate and run the executable file named "PrivacyPerfectDataImporter Setup &lt;version&gt;.exe".
 
 ## Backend (NestJS with Docker):
 
